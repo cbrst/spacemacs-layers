@@ -14,7 +14,8 @@
  - [[Key bindings][Key bindings]]
 
 * Description
-This layer provides figlet.el to transform strings to ASCII-art text using figlet.
+
+This layer provides [[https://github.com/emacsmirror/figlet][figlet.el]] to transform strings to ASCII-art text using [[http://www.figlet.org][figlet]].
 
 ** Features
 - Inserting figlet text by inputting in the minibuffer
@@ -30,7 +31,7 @@ To use this contribution add it to your =~/.spacemacs=
 #+end_src
 
 * Configuration
-You can set the figlet font to be used by setting ~figlet-font~
+You can set the figlet font to be used by setting ~figlet-font~. Available fonts can be found [[http://www.figlet.org/examples.html][here]].
 
 #+begin_src emacs-lisp
 '(figlet :variables figlet-font "small")
