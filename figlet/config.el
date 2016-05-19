@@ -1,6 +1,6 @@
 ;;; config.el --- Figlet Layer Configuration File for Spacemacs
 ;;
-;; Copyright (c) 2016 Christian Brassat
+;; Copyright (c) 2012-2016 Sylvain Benner & Contributors
 ;;
 ;; Author: Christian Brassat <crshd@trashbukk.it>
 ;; URL: https://github.com/crshd/spacemacs-layers
@@ -13,3 +13,5 @@
 
 (defvar figlet-font "small"
   "Default font for figlet.")
+
+;; config.el ends here
