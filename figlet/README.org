@@ -1,0 +1,47 @@
+#+TITLE: figlet layer
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../css/readtheorg.css" />
+
+#+CAPTION: logo
+
+# The maximum height of the logo should be 200 pixels.
+[[img/figlet.png]]
+
+* Table of Contents                                        :TOC_4_org:noexport:
+ - [[Description][Description]]
+   - [[Features][Features]]
+ - [[Install][Install]]
+ - [[Configuration][Configuration]]
+ - [[Key bindings][Key bindings]]
+
+* Description
+This layer provides figlet.el to transform strings to ASCII-art text using figlet.
+
+** Features
+- Inserting figlet text by inputting in the minibuffer
+- Converting region to figlet text
+- Turning figlet text into block comments
+
+* Install
+
+To use this contribution add it to your =~/.spacemacs=
+
+#+begin_src emacs-lisp
+  (setq-default dotspacemacs-configuration-layers '(figlet))
+#+end_src
+
+* Configuration
+You can set the figlet font to be used by setting ~figlet-font~
+
+#+begin_src emacs-lisp
+'(figlet :variables figlet-font "small")
+#+end_src
+
+
+* Key bindings
+
+| Key Binding     | Description                                                      |
+|-----------------+------------------------------------------------------------------|
+| ~<SPC> x f f~   | interactive figleting using the minibuffer for input             |
+| ~<SPC> x f c~   | interactive figlet comment string using the minibuffer for input |
+| ~<SPC> x f r r~ | figletify region or current line, if no region selected          |
+| ~<SPC> x f r c~ | figletify region or current line as a comment block              |
